@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gizmology Creator Kit - স্পেশাল অফার</title>
+  <style>
+    :root {
+      --primary-color: #ff4757;
+      --secondary-color: #2ed573;
+      --bg-color: #f8f9fa;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: var(--bg-color); color: #333; line-height: 1.6; }
+    
+    .container { max-width: 650px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    
+    /* Header & Offer Banner */
+    .header { text-align: center; padding: 10px 0; }
+    .badge { background: var(--primary-color); color: #fff; padding: 6px 12px; font-weight: bold; border-radius: 20px; font-size: 14px; display: inline-block; margin-bottom: 10px; }
+    h1 { font-size: 24px; color: #111; margin-bottom: 10px; }
+    .subtitle { font-size: 16px; color: #555; }
+    
+    /* Timer Box */
+    .timer-container { background: #fff3bf; border: 2px dashed #f59f00; border-radius: 8px; padding: 15px; text-align: center; margin: 20px 0; }
+    .timer-title { font-weight: bold; color: #d9480f; margin-bottom: 8px; font-size: 15px; }
+    .timer { font-size: 26px; font-weight: bold; color: #d9480f; letter-spacing: 2px; }
+    
+    /* Features Section */
+    .features-box { background: #f1f3f5; border-radius: 8px; padding: 15px; margin: 20px 0; }
+    .features-title { font-weight: bold; margin-bottom: 10px; font-size: 18px; color: #2b8a3e; }
+    .features-list { list-style: none; }
+    .features-list li { margin-bottom: 8px; padding-left: 20px; position: relative; }
+    .features-list li::before { content: "✓"; position: absolute; left: 0; color: var(--secondary-color); font-weight: bold; }
+    
+    /* Price Box */
+    .price-box { text-align: center; background: #e7f5ff; border: 1px solid #74c0fc; border-radius: 8px; padding: 15px; margin: 20px 0; }
+    .old-price { text-decoration: line-through; color: #868e96; font-size: 18px; }
+    .new-price { font-size: 28px; color: #1971c2; font-weight: bold; margin-left: 10px; }
+    .free-shipping { color: #2b8a3e; font-weight: bold; font-size: 14px; margin-top: 5px; }
+    
+    /* Google Form Embed Container */
+    .form-container { margin-top: 25px; text-align: center; }
+    .form-container iframe { width: 100%; height: 850px; border: none; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  
+  <!-- Header Section -->
+  <div class="header">
+    <span class="badge">⚡ সীমিত সময়ের স্পেশাল অফার</span>
+    <h1>ভিডিওতে আবছা আলো আর ফ্যানের বিরক্তিকর আওয়াজ বন্ধ করুন!</h1>
+    <p class="subtitle">পান স্টুডিও কোয়ালিটি লাইটিং, ক্রিস্টাল ক্লিয়ার সাউন্ড আর পারফেক্ট শট — এক সেটে সব সমাধান!</p>
+  </div>
+
+  <!-- 24-Hour Countdown Timer Section -->
+  <div class="timer-container">
+    <div class="timer-title">⏰ আপনার স্পেশাল ডিসকাউন্ট অফারটি শেষ হতে বাকি:</div>
+    <div class="timer" id="countdown">23:59:59</div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="features-box">
+    <div class="features-title">Gizmology Creator Kit-এ যা যা পাচ্ছেন:</div>
+    <ul class="features-list">
+      <li><strong>১০" প্রফেশনাল রিং লাইট:</strong> ৩টি কালার মোড ও ব্রাইটনেস কন্ট্রোল সুবিধা।</li>
+      <li><strong>হাই-কোয়ালিটি ওয়্যারলেস মাইক:</strong> নয়েজ ক্যানসেলেশন সহ ক্রিস্টাল ক্লিয়ার সাউন্ড।</li>
+      <li><strong>৬ ফিট অ্যাডজাস্টেবল মেটাল ট্রাইপড:</strong> মজবুত বডি ও হাইট অ্যাডজাস্ট করার সুবিধা।</li>
+      <li><strong>প্লাগ অ্যান্ড প্লে:</strong> কোনো অ্যাপ লাগবে না, ফোন বা আইফোনে সাথেই কানেক্ট হবে।</li>
+    </ul>
+  </div>
+
+  <!-- Price Section -->
+  <div class="price-box">
+    <div>
+      <span class="old-price">৳২,২৯০</span>
+      <span class="new-price">৳১,৬ ৯০</span>
+    </div>
+    <div class="free-shipping">✓ সারা দেশে ডেলিভারি চার্জ একদম ফ্রি!</div>
+  </div>
+
+  <!-- Google Form Section -->
+  <div class="form-container">
+    <h2 style="font-size: 20px; margin-bottom: 15px;">অর্ডার করতে নিচের ফর্মটি পূরণ করুন</h2>
+    
+    <!-- আপনার Google Form-এর Embed Link নিচে 'src' এর ভেতরে বসান -->
+    <iframe src="YOUR_GOOGLE_FORM_EMBED_URL_HERE" width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0">লোডিং...</iframe>
+  </div>
+
+</div>
+
+<!-- JavaScript for First Visit 24-Hour Countdown Timer -->
+<script>
+  function init24HourTimer() {
+    const STORAGE_KEY = 'gizmology_first_visit_time';
+    const TWENTY_FOUR_HOURS = 24 * 60 * 60 * 1000; // ২৪ ঘণ্টার মিলিসেকেন্ড
+
+    let firstVisitTime = localStorage.getItem(STORAGE_KEY);
+
+    if (!firstVisitTime) {
+      firstVisitTime = new Date().getTime();
+      localStorage.setItem(STORAGE_KEY, firstVisitTime);
+    }
+
+    const targetTime = parseInt(firstVisitTime, 10) + TWENTY_FOUR_HOURS;
+    const timerDisplay = document.getElementById('countdown');
+
+    const timerInterval = setInterval(function () {
+      const now = new Date().getTime();
+      let timeLeft = targetTime - now;
+
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        timerDisplay.textContent = "00:00:00";
+        return;
+      }
+
+      let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      hours = hours < 10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      timerDisplay.textContent = hours + ":" + minutes + ":" + seconds;
+    }, 1000);
+  }
+
+  window.onload = init24HourTimer;
+</script>
+
+</body>
+</html>
